@@ -59,8 +59,8 @@
         
       </form>
 
-      <br><button onclick="getAllTodos()">Refresh</button>
-      <button onclick="getDelete()" style="width: 12% ; ">Delete All</button>
+      <!-- <br><button onclick="getAllTodos()">Refresh</button> -->
+      <!-- <button onclick="getDelete()" style="width: 12% ; ">Delete All</button> -->
   
       <h3 id="current"> </h3>
      
@@ -119,21 +119,28 @@ let api = 'https://fragile-tan-bunny.cyclic.app/'
 
 setInterval(getAllTodos, 700);
 
-      function getDelete() {
+//       function getDelete() {
        
                   
-          let code = prompt("Enter Password ")
-          if (code === "000") {
-              axios.delete('https://fragile-tan-bunny.cyclic.app/del')
-          .then(function (response) {
-                  console.log(response.data);
+//           let code = prompt("Enter Password ")
+//           if (code === "000") {
+//               axios.delete('https://fragile-tan-bunny.cyclic.app/del')
+//           .then(function (response) {
+//                   console.log(response.data);
           
-              })    
-              .catch((error) => {
-              console.log(error)
-          })}
+//               })    
+//               .catch((error) => {
+//               console.log(error)
+//           })}
+
+//           var updateBtn = document.createElement('button');
+//   var updateText = document.createTextNode('UPDATE');
+
+//   updateBtn.setAttribute('class', 'btn-success btn1');
+//   updateBtn.setAttribute('onclick', 'updateItem(this)');
+//   updateBtn.appendChild(updateText);
       
-      }
+//       }
   
   </script>
 
